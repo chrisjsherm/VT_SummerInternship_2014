@@ -1,0 +1,13 @@
+C:\FundPortalUITests\FundPortalUITests\bin\Debug\FundPortalUITests.dll.config
+C:\FundPortalUITests\FundPortalUITests\bin\Debug\FundPortalUITests.dll
+C:\FundPortalUITests\FundPortalUITests\bin\Debug\FundPortalUITests.pdb
+C:\FundPortalUITests\FundPortalUITests\bin\Debug\nunit.extensions.dll
+C:\FundPortalUITests\FundPortalUITests\bin\Debug\nunit.framework.dll
+C:\FundPortalUITests\FundPortalUITests\bin\Debug\WebDriver.dll
+C:\FundPortalUITests\FundPortalUITests\bin\Debug\WebDriver.Support.dll
+C:\FundPortalUITests\FundPortalUITests\bin\Debug\nunit.framework.xml
+C:\FundPortalUITests\FundPortalUITests\bin\Debug\WebDriver.xml
+C:\FundPortalUITests\FundPortalUITests\bin\Debug\WebDriver.Support.xml
+C:\FundPortalUITests\FundPortalUITests\obj\Debug\FundPortalUITests.csprojResolveAssemblyReference.cache
+C:\FundPortalUITests\FundPortalUITests\obj\Debug\FundPortalUITests.dll
+C:\FundPortalUITests\FundPortalUITests\obj\Debug\FundPortalUITests.pdb
