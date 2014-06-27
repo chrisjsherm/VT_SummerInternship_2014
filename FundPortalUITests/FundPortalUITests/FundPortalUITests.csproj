@@ -79,9 +79,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AdministratorRolesManageAreasTests.cs" />
     <Compile Include="AdministratorRolesManageFundsTests.cs" />
+    <Compile Include="AdministratorRolesManageUsersTests.cs" />
+    <Compile Include="BrowseRequestingAreaTests.cs" />
     <Compile Include="CreateNewFundAreaIdTests.cs" />
     <Compile Include="Credentials.cs" />
+    <Compile Include="FundRolesTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UITestSetup.cs" />
   </ItemGroup>
