@@ -13,7 +13,6 @@ namespace FundPortalUITests
     public class AdministratorRolesManageFundsTests
     {
         private UITestSetup uiTestSetup = new UITestSetup();
-        private string targetUser = "brands6";
 
         [SetUp]
         public void Init()
@@ -38,7 +37,7 @@ namespace FundPortalUITests
 
             uiTestSetup.Driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
 
-            var targetUserLink = uiTestSetup.Driver.FindElement(By.PartialLinkText(targetUser));
+            var targetUserLink = uiTestSetup.Driver.FindElement(By.PartialLinkText(uiTestSetup.targetUser));
             targetUserLink.Click();
 
             var manageFundsCheckBox = uiTestSetup.Driver.FindElement(By.XPath("//input[@value='MANAGE-FUNDS']"));
@@ -80,7 +79,7 @@ namespace FundPortalUITests
 
             uiTestSetup.Driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
 
-            var targetUserLink = uiTestSetup.Driver.FindElement(By.PartialLinkText(targetUser));
+            var targetUserLink = uiTestSetup.Driver.FindElement(By.PartialLinkText(uiTestSetup.targetUser));
             targetUserLink.Click();
 
             var manageFundsCheckBox = uiTestSetup.Driver.FindElement(By.XPath("//input[@value='MANAGE-FUNDS']"));

@@ -11,7 +11,6 @@ namespace FundPortalUITests
     public class FundRolesTests
     {
         private UITestSetup uiTestSetup = new UITestSetup();
-        private string targetUser = "brands6";
 
         [SetUp]
         public void Init()
@@ -27,7 +26,7 @@ namespace FundPortalUITests
         }
 
         [TestCase]
-        public void EditOtherUsesOfFunds_Granted_Then_Browse_RequestingArea_EditOtherUsesOfFunds_Visible_Accessible()
+        public void EditOtherUsesOfFunds_Granted_Then_Browse_Manage_RequestingArea_EditOtherUsesOfFunds_Visible_Accessible()
         {
             uiTestSetup.Driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
 
@@ -36,14 +35,13 @@ namespace FundPortalUITests
 
             uiTestSetup.Driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
 
-            var targetUserLink = uiTestSetup.Driver.FindElement(By.PartialLinkText(targetUser));
+            var targetUserLink = uiTestSetup.Driver.FindElement(By.PartialLinkText(uiTestSetup.targetUser));
             targetUserLink.Click();
 
             
 
             uiTestSetup.Driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
 
-            IJavaScriptExecutor executor = (IJavaScriptExecutor)uiTestSetup.Driver;
             var keys = Keys.Control + Keys.Shift + "r";
             uiTestSetup.Driver.FindElement(By.TagName("body")).SendKeys(keys);
 
@@ -56,7 +54,7 @@ namespace FundPortalUITests
             catch (Exception e)
             {
                 uiTestSetup.takeScreenShot(
-                    "EditOtherUsesOfFunds_Granted_Then_Browse_RequestingArea_EditOtherUsesOfFunds_Visible_Accessible");
+                    "EditOtherUsesOfFunds_Granted_Then_Browse_Manage_RequestingArea_EditOtherUsesOfFunds_Visible_Accessible");
                 Assert.Fail(e.StackTrace);
             }
         }

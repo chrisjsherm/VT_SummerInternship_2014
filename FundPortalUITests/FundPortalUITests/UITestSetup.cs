@@ -15,6 +15,8 @@ namespace FundPortalUITests
         public IWebDriver Driver { get; set; }
         private string url;
 
+        public string targetUser = "brands6";
+
         public UITestSetup()
         {
             this.url = "https://test-foundation.vpfin.vt.edu/";
