@@ -35,7 +35,7 @@ namespace FundPortalUITests
 
             uiTestSetup.Driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
 
-            var targetUserLink = uiTestSetup.Driver.FindElement(By.PartialLinkText(uiTestSetup.targetUser));
+            var targetUserLink = uiTestSetup.Driver.FindElement(By.PartialLinkText(uiTestSetup.TargetUser()));
             targetUserLink.Click();
 
             var manageAreasCheckBox = uiTestSetup.Driver.FindElement(By.XPath("//input[@value='MANAGE-AREAS']"));
@@ -76,7 +76,7 @@ namespace FundPortalUITests
 
             uiTestSetup.Driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
 
-            var targetUserLink = uiTestSetup.Driver.FindElement(By.PartialLinkText(uiTestSetup.targetUser));
+            var targetUserLink = uiTestSetup.Driver.FindElement(By.PartialLinkText(uiTestSetup.TargetUser()));
             targetUserLink.Click();
 
             var manageAreasCheckBox = uiTestSetup.Driver.FindElement(By.XPath("//input[@value='MANAGE-AREAS']"));

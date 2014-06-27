@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace FundPortalUITests
 {
+    //Test not finished because FundRoles don't seem to work as expected
     public class FundRolesTests
     {
         private UITestSetup uiTestSetup = new UITestSetup();
@@ -35,7 +36,7 @@ namespace FundPortalUITests
 
             uiTestSetup.Driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
 
-            var targetUserLink = uiTestSetup.Driver.FindElement(By.PartialLinkText(uiTestSetup.targetUser));
+            var targetUserLink = uiTestSetup.Driver.FindElement(By.PartialLinkText(uiTestSetup.TargetUser()));
             targetUserLink.Click();
 
             

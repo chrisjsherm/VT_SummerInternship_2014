@@ -14,8 +14,12 @@ namespace FundPortalUITests
     {
         public IWebDriver Driver { get; set; }
         private string url;
+        private string targetUser = "brands6";
 
-        public string targetUser = "brands6";
+        public string TargetUser()
+        {
+            return targetUser;
+        }
 
         public UITestSetup()
         {
