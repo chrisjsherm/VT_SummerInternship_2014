@@ -13,7 +13,7 @@ namespace FundPortalUITests
     public class BrowseRequestingAreaTests
     {
         private UITestSetup uiTestSetup = new UITestSetup();
-        private bool same = false;
+        private bool sameData = false;
 
         [SetUp]
         public void Init()
@@ -68,11 +68,11 @@ namespace FundPortalUITests
                 ReadOnlyCollection<IWebElement> table2Rows =
                     browseFundsTable.FindElements(By.TagName("tr"));
 
-                same = (table1Rows.Count == table2Rows.Count) && !table1Rows.Except(table2Rows).Any();
+                sameData = (table1Rows.Count == table2Rows.Count) && !table1Rows.Except(table2Rows).Any();
 
                 try
                 {
-                    Assert.IsFalse(same);
+                    Assert.IsFalse(sameData);
                 }
                 catch (Exception e)
                 {

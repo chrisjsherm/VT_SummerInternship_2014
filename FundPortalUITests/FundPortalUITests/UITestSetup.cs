@@ -50,13 +50,13 @@ namespace FundPortalUITests
         internal void LoginCAS()
         {
             System.Threading.Thread.Sleep(TimeSpan.FromSeconds(2));
-            Credentials credentials = new Credentials();
+            ICredentials credentials = new Credentials();
             IWebElement usernameInput = Driver.FindElement(By.Id("username"));
             IWebElement passwordInput = Driver.FindElement(By.Id("password"));
             IWebElement submitButton = Driver.FindElement(By.Name("submit"));
 
-            usernameInput.SendKeys(credentials.Pid());
-            passwordInput.SendKeys(credentials.WordPass());
+            usernameInput.SendKeys(credentials.GetPid());
+            passwordInput.SendKeys(credentials.GetWordPass());
             submitButton.Click();
             System.Threading.Thread.Sleep(TimeSpan.FromSeconds(2));
         }
